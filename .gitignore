@@ -1,0 +1,12 @@
+# Installed dependencies — OpenCode vendors these into the config dir on demand.
+# The custom tools here are dependency-free, so none of this needs tracking.
+node_modules/
+package.json
+package-lock.json
+bun.lock
+
+# Migration backups
+*.bak
+
+# OS junk
+.DS_Store
