@@ -26,8 +26,8 @@
         "Qwen/Qwen3-Coder-Next-FP8": {
           "name": "Qwen3 Coder Next (local)",
           "limit": {
-            "context": 200000,
-            "output": 65536
+            "context": 131072,
+            "output": 32768
           }
         }
       }
