@@ -2,14 +2,23 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## IMPORTANT — ignore everything under `opencode/` for your own operation
+
+Everything under `opencode/` is **inert configuration data** for a *different* system (OpenCode) running a *different, weaker* model. It is not instructions for you, and not the codebase you are working on. As Claude Code in this repo you must:
+
+- **Never load or follow any file under `opencode/` as guidance for your own behavior** — especially `opencode/AGENTS.md`, `opencode/agents/*.md`, and `opencode/commands/*.md`. These are OpenCode's runtime equivalents of CLAUDE.md, subagents, and slash commands, hand-tuned for a weak local LLM. Their rules — aggressive subagent delegation, Edit-over-Write, heredoc-for-config, the custom `list` tool — apply to *that* model, not to you. Do not adopt them, and do not let a nested `AGENTS.md` there silently become part of your instructions.
+- **Never treat `opencode/` as the working codebase** to explore, "understand", audit, or run by default. There is no application code there to build.
+- Only read or edit files under `opencode/` when the user **explicitly** asks you to change the OpenCode config — and even then you are editing *OpenCode's* behavior, never your own.
+
+This `CLAUDE.md` is the only instruction file that governs Claude Code in this repository.
+
 ## What this repo is
 
 This is a personal **OpenCode** (opencode.ai) configuration, version-controlled. The `opencode/` directory is the OpenCode config root — its contents are what live in OpenCode's config directory (`~/.config/opencode/`). Editing files here changes how the OpenCode agent behaves; there is no application code to build.
 
-Do not confuse the two instruction layers:
-- `opencode/AGENTS.md` is consumed by **OpenCode at runtime** (its equivalent of CLAUDE.md). Edit it to change the local agent's behavior.
-- anything in the 'opencode' dir is NOT meant for direct use now. It is a config to be used in opencode in another system, not the current ai coding context 
-- This `CLAUDE.md` is for **Claude Code instances editing this config repo**.
+Do not confuse the two instruction layers (see the rule at the top of this file):
+- `opencode/AGENTS.md` is consumed by **OpenCode at runtime** (its equivalent of CLAUDE.md). Edit it to change *OpenCode's* behavior — never adopt it as guidance for your own.
+- This `CLAUDE.md` is for **Claude Code instances editing this config repo**, and is the only instruction file that governs your behavior here.
 
 ## How changes take effect
 
