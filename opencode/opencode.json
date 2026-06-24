@@ -18,7 +18,7 @@
       "npm": "@ai-sdk/openai-compatible",
       "name": "Local LLM (vllm @ 192.168.0.5)",
       "options": {
-        "baseURL": "192.168.0.5:8000/v1",
+        "baseURL": "http://192.168.0.5:8000/v1",
         "timeout": false,
         "chunkTimeout": 3600000
       },
