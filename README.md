@@ -7,8 +7,8 @@ opencode/
 ├── opencode.json     # providers, model, permissions
 ├── tui.json          # theme (tokyonight)
 ├── AGENTS.md         # global rules applied to every session
-├── agent/            # read-only subagents: investigator, architect, boundaries
-└── tool/             # custom tools (list.ts)
+├── agents/           # read-only subagents: investigator, architect, boundaries
+└── tools/            # custom tools (list.ts)
 ```
 
 "Using" this repo means making OpenCode load the contents of `opencode/` as its global config. There are three ways to do that, below.
@@ -111,7 +111,7 @@ Launch `opencode` and confirm:
 - The subagents `@investigator`, `@architect`, and `@boundaries` are available.
 - The custom `list` tool works (it satisfies `ls`-style tool calls).
 
-Restart OpenCode after any change to `opencode.json`, `tui.json`, `AGENTS.md`, or any file under `agent/` or `tool/` — config and tools are loaded at startup.
+Restart OpenCode after any change to `opencode.json`, `tui.json`, `AGENTS.md`, or any file under `agents/` or `tools/` — config and tools are loaded at startup.
 
 ## Updating
 
