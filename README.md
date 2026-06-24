@@ -14,7 +14,7 @@ opencode/
 "Using" this repo means making OpenCode load the contents of `opencode/` as its global config. There are three ways to do that, below.
 
 > [!IMPORTANT]
-> This config targets a **local vLLM server** (`192.168.0.5:8000`, OpenAI-compatible) and **disables every cloud provider**. Out of the box it only works if that server is reachable and serving `Qwen3-Coder-Next`. To use a different model/provider, edit `opencode/opencode.json` — see [`CLAUDE.md`](./CLAUDE.md) for the three places the model id appears.
+> This config targets a **local vLLM server** (`192.168.0.5:8000`, OpenAI-compatible) and **disables every cloud provider**. Out of the box it only works if that server is reachable and serving `Qwen3-Coder-Next`. To use a different model/provider, edit `opencode/opencode.json` (the model id appears in three places).
 
 ## Prerequisites
 
@@ -109,7 +109,7 @@ Launch `opencode` and confirm:
 - The **tokyonight** theme is applied.
 - The local model is selected (or change it with `/models`).
 - The subagents `@investigator`, `@architect`, and `@boundaries` are available.
-- The custom `list` tool works (it satisfies `ls`-style tool calls — see [`CLAUDE.md`](./CLAUDE.md)).
+- The custom `list` tool works (it satisfies `ls`-style tool calls).
 
 Restart OpenCode after any change to `opencode.json`, `tui.json`, `AGENTS.md`, or any file under `agent/` or `tool/` — config and tools are loaded at startup.
 
