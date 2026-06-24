@@ -8,6 +8,7 @@ This is a personal **OpenCode** (opencode.ai) configuration, version-controlled.
 
 Do not confuse the two instruction layers:
 - `opencode/AGENTS.md` is consumed by **OpenCode at runtime** (its equivalent of CLAUDE.md). Edit it to change the local agent's behavior.
+- anything in the 'opencode' dir is NOT meant for direct use now. It is a config to be used in opencode in another system, not the current ai coding context 
 - This `CLAUDE.md` is for **Claude Code instances editing this config repo**.
 
 ## How changes take effect
