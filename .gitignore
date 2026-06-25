@@ -10,3 +10,8 @@ bun.lock
 
 # OS junk
 .DS_Store
+
+# Local-only model override (e.g. home machine). Loaded at runtime via
+# OPENCODE_CONFIG_CONTENT; never pushed, so colleagues only ever see the
+# committed work config in opencode/opencode.json.
+local/
