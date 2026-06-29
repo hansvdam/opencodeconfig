@@ -23,10 +23,10 @@
         "chunkTimeout": 3600000
       },
       "models": {
-        "Qwen/Qwen3-Coder-Next-FP8": {
-          "name": "Qwen3 Coder Next (local)",
+        "nvidia/Qwen3.6-35B-A3B-NVFP4": {
+          "name": "Qwen3.6-35B-A3B-NVFP4",
           "limit": {
-            "context": 131072,
+            "context": 262144,
             "output": 32768
           }
         }
@@ -34,8 +34,8 @@
     }
   },
 
-  "model": "localllm/mlx-community/Qwen3-Coder-Next-6bit",
-  "small_model": "localllm/mlx-community/Qwen3-Coder-Next-6bit",
+  "model": "localllm/nvidia/Qwen3.6-35B-A3B-NVFP4",
+  "small_model": "localllm/nvidia/Qwen3.6-35B-A3B-NVFP4",
 
   "permission": {
     "edit": "allow",
