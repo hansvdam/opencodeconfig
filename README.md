@@ -14,7 +14,7 @@ opencode/
 "Using" this repo means making OpenCode load the contents of `opencode/` as its global config. There are three ways to do that, below.
 
 > [!IMPORTANT]
-> This config targets a **local vLLM server** (`192.168.0.5:8000`, OpenAI-compatible) and **disables every cloud provider**. Out of the box it only works if that server is reachable and serving `Qwen3-Coder-Next`. To use a different model/provider, edit `opencode/opencode.json` (the model id appears in three places).
+> This config targets a **local vLLM server** (`192.168.0.5:8000`, OpenAI-compatible) and **disables every cloud provider**. It currently runs on the local NVIDIA DGX Spark. Out of the box it only works if that server is reachable and serving `nvidia/Qwen3.6-35B-A3B-NVFP4`. To use a different model/provider, edit `opencode/opencode.json` (the model id appears in three places).
 
 ## Prerequisites
 
